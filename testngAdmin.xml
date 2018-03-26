@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Admin Login and check links" verbose="1" >
+	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="username" value="aadmin"></parameter>
+	<parameter name="password" value="1234qwer"></parameter>
+	<parameter name="captcha" value="11111"></parameter>
+	<test name="test" >
+	  <classes>
+	     <class name="Cirro.Test.AdminTestSuit" />
+	  </classes>
+	</test>
+</suite>
