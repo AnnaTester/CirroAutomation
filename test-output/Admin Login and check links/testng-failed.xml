@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Admin Login and check links]">
+  <parameter name="password" value="1234qwer"/>
+  <parameter name="captcha" value="11111"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="username" value="aadmin"/>
+  <test name="Admintest(failed)">
+    <classes>
+      <class name="Cirro.Test.AdminTestSuit">
+        <methods>
+          <include name="goToCredit"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Cirro.Test.AdminTestSuit -->
+    </classes>
+  </test> <!-- Admintest(failed) -->
+</suite> <!-- Failed suite [Admin Login and check links] -->
