@@ -21,11 +21,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Cirro.Pages.MemLoginPage;
+import Cirro.Pages.AdminLoginPage;
 import Cirro.Pages.WalletPage;
 import junit.framework.Assert;
-import Cirro.Pages.BasePage;
-import Cirro.Pages.MemDashboard;
+import Cirro.Pages.AdminDashboard;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -36,8 +35,8 @@ import java.awt.datatransfer.StringSelection;
 public class AdminTestSuit  {
 	
 	WebDriver driver;
-	MemLoginPage objLogin;
-	MemDashboard objDashboard;
+	AdminLoginPage objAdLogin;
+	AdminDashboard objADashboard;
    
 	@BeforeMethod
 	@Parameters({"browser", "username", "password", "captcha"})
@@ -53,52 +52,108 @@ public class AdminTestSuit  {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.pollingEvery(200, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class);
         driver.get("https://astaging.cirrocapital.com/login");   
-        objLogin = new MemLoginPage(driver);
-	    objLogin.MemberLoginFunction(username, password, captcha);
-        objDashboard = new MemDashboard(driver);
-	   // objDashboard.CheckLoginResult();
+        objAdLogin = new AdminLoginPage(driver);
+	    objAdLogin.adminLoginFunction(username, password, captcha);
+        objADashboard = new AdminDashboard(driver);
+        objADashboard.CheckLoginResult();
     }
-	/*public void setup () {	
-		System.setProperty("webdriver.gecko.driver", "/Users/annathan/Downloads/geckodriver");
-		WebDriver driver = new FirefoxDriver();
-		driver.get("http://www.toolsqa.com");
-	}*/
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
 	
 	@Test
 	public void checkUserAccountStatus(){
-		objDashboard = new MemDashboard(driver);
-		By accounStatus = By.xpath("//span[@class='label label-warning']");
-		System.out.println(driver.findElement(accounStatus).getText());
-		Assert.assertEquals(true,driver.findElement(accounStatus).getText().contentEquals("Account Status: Active (5 Days Left)"));
+		objADashboard = new AdminDashboard (driver);
+		//System.out.println(objADashboard.getAccountStatus());
+		Assert.assertEquals(true,objADashboard.getAccountStatus().contentEquals("Aadmin, Administrator: Aadmin"));
 	}
 	
 	@Test
-	public Boolean checkMyWalletMenu(){
-		objDashboard = new MemDashboard(driver);
-		objDashboard.goToMyWallet();
-		if (driver.getCurrentUrl().matches("https://staging.cirrocapital.com/wallet"))
-			return true;
-		else 
-			return false;
+	public void goToClientManagement() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToClientManagement();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/user/mgmt"));
 	}
 	
 	@Test
-	public void goToDigicoin() {
-		objDashboard = new MemDashboard(driver);
-		objDashboard.clickLink("Digicoin");
+	public void goToPlanManagement() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToPlanManagement();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/subscription"));
+	}
+	
+	@Test
+	public void goToWalletManagement() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToWalletManagement();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/wallet"));
+	}
+	
+	/*@Test
+	public void goToCredit() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToCredit();
+		System.out.println("abc" + driver.getCurrentUrl());
 		
-		WalletPage wallet = new WalletPage( driver );
-		Assert.assertEquals(true, wallet.isDigicoinOpened());
+		//Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/credit"));
 	}
 	
 	@Test
+	public void goToReward() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToCredit();
+		System.out.println("abc" + driver.getCurrentUrl());
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/reward"));
+	}
+	*/
+	@Test
+	public void goToNetworks() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToNetwork();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/network"));
+	}
+	
+	@Test
+	public void placementViewAll() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToNetwork();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/network"));
+	}
+	
+	@Test
+	public void goToSupportTicket() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToSupportTicket();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/support"));
+	}
+	
+	@Test
+	public void goToReport() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToReport();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/report"));
+	}
+	
+	@Test
+	public void goToSystemConfig() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToSystemConfig();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/config"));
+	}
+	
+	@Test
+	public void goToMyAccount() {
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToMyAccount();
+		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://astaging.cirrocapital.com/profile"));
+	}
+	
+
+	/*@Test
 	public void goToCirroCredits() {
-		objDashboard = new MemDashboard(driver);
-		objDashboard.clickLink( "cirro credits" );
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.clickLink( "cirro credits" );
 		BasePage page = new BasePage( driver );
 		Assert.assertEquals(true, page.isPermissionDenied());
 		
@@ -106,24 +161,24 @@ public class AdminTestSuit  {
 	
 	@Test
 	public void goToUSDCredit() {
-		objDashboard = new MemDashboard(driver);
-		objDashboard.clickLink( "USD Credits" );
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.clickLink( "USD Credits" );
 		BasePage page = new BasePage( driver );
 		Assert.assertEquals(true, page.isPermissionDenied());
 	}
 	
 	@Test
 	public void goToShoppingCredits() {
-		objDashboard = new MemDashboard(driver);
-		objDashboard.clickLink("Shopping Credits");
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.clickLink("Shopping Credits");
 		BasePage page = new BasePage( driver );
 		Assert.assertEquals(true, page.isPermissionDenied());
 	}
 	
 	@Test
 	public void goToMyWallet(){
-		objDashboard = new MemDashboard(driver);
-		objDashboard.goToMyWallet();
+		objADashboard = new AdminDashboard(driver);
+		objADashboard.goToMyWallet();
 		Assert.assertEquals(true, driver.getCurrentUrl().matches("https://staging.cirrocapital.com/wallet"));
 	}
 */

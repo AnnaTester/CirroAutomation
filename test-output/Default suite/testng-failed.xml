@@ -3,19 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Cirro.Test.MemberTestSuit">
+      <class name="Cirro.Test.AdminTestSuit">
         <methods>
-          <include name="goToShoppingCredits"/>
-          <include name="goToDigicoin"/>
-          <include name="goToUSDCredit"/>
+          <include name="goToCredit"/>
+          <include name="goToPlanManagement"/>
           <include name="checkUserAccountStatus"/>
           <include name="tearDown"/>
-          <include name="goToMyWallet"/>
-          <include name="identityUpload"/>
+          <include name="goToClientManagement"/>
           <include name="setup"/>
-          <include name="goToCirroCredits"/>
+          <include name="goToWalletManagement"/>
+          <include name="checkMyWalletMenu"/>
         </methods>
-      </class> <!-- Cirro.Test.MemberTestSuit -->
+      </class> <!-- Cirro.Test.AdminTestSuit -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

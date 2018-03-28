@@ -70,7 +70,7 @@ public class MemberTestSuit  {
 		Assert.assertEquals(true,driver.findElement(accounStatus).getText().contentEquals("Account Status: Active (5 Days Left)"));
 	}
 	
-	@Test
+/*	@Test
 	public Boolean checkMyWalletMenu(){
 		objDashboard = new MemDashboard(driver);
 		objDashboard.goToMyWallet();
@@ -124,7 +124,7 @@ public class MemberTestSuit  {
 	@Test
 	public void identityUpload () throws AWTException{
 		objDashboard = new MemDashboard(driver);
-		/*Assert.assertEquals(true, driver.getCurrentUrl().matches("https://staging.cirrocapital.com/profile"));*/
+		/*Assert.assertEquals(true, driver.getCurrentUrl().matches("https://staging.cirrocapital.com/profile"));
 		objDashboard.goToMyAccount();
 		try {
 			Thread.sleep(1000);
@@ -170,4 +170,5 @@ public class MemberTestSuit  {
 	    System.out.println("abc2");
 		Assert.assertEquals(true, uploadSatus.isDisplayed());
 	}
+*/
 }

@@ -7,13 +7,13 @@
   <parameter name="username" value="99810477"/>
   <test name="test(failed)">
     <classes>
-      <class name="Cirro.Test.TestSuit">
+      <class name="Cirro.Test.MemberTestSuit">
         <methods>
-          <include name="identityUpload"/>
+          <include name="checkUserAccountStatus"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Cirro.Test.TestSuit -->
+      </class> <!-- Cirro.Test.MemberTestSuit -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Login and check links] -->

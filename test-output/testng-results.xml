@@ -1,365 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="0" ignored="0" total="7" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40" started-at="2018-03-26T10:33:16Z" finished-at="2018-03-26T10:33:16Z">
+  <suite name="Admin Login and check links" duration-ms="53338" started-at="2018-03-28T07:38:28Z" finished-at="2018-03-28T07:39:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40" started-at="2018-03-26T10:33:16Z" finished-at="2018-03-26T10:33:16Z">
-      <class name="Cirro.Test.MemberTestSuit">
-        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Admintest" duration-ms="53338" started-at="2018-03-28T07:38:28Z" finished-at="2018-03-28T07:39:22Z">
+      <class name="Cirro.Test.AdminTestSuit">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4780" started-at="2018-03-28T15:38:28Z" finished-at="2018-03-28T15:38:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="checkUserAccountStatus()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="checkUserAccountStatus" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="checkMyWalletMenu()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="checkMyWalletMenu" duration-ms="389" started-at="2018-03-28T15:38:33Z" finished-at="2018-03-28T15:38:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMyWalletMenu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="549" started-at="2018-03-28T15:38:34Z" finished-at="2018-03-28T15:38:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4564" started-at="2018-03-28T15:38:34Z" finished-at="2018-03-28T15:38:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkUserAccountStatus()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="checkUserAccountStatus" duration-ms="15" started-at="2018-03-28T15:38:39Z" finished-at="2018-03-28T15:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserAccountStatus -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="532" started-at="2018-03-28T15:38:39Z" finished-at="2018-03-28T15:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="5174" started-at="2018-03-28T15:38:39Z" finished-at="2018-03-28T15:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="goToCirroCredits()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="goToCirroCredits" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="goToClientManagement()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToClientManagement" duration-ms="356" started-at="2018-03-28T15:38:44Z" finished-at="2018-03-28T15:38:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToCirroCredits -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        </test-method> <!-- goToClientManagement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="545" started-at="2018-03-28T15:38:45Z" finished-at="2018-03-28T15:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4404" started-at="2018-03-28T15:38:45Z" finished-at="2018-03-28T15:38:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="goToDigicoin()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="goToDigicoin" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="goToMyAccount()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToMyAccount" duration-ms="455" started-at="2018-03-28T15:38:50Z" finished-at="2018-03-28T15:38:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToDigicoin -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        </test-method> <!-- goToMyAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="562" started-at="2018-03-28T15:38:50Z" finished-at="2018-03-28T15:38:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="3825" started-at="2018-03-28T15:38:51Z" finished-at="2018-03-28T15:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="goToMyWallet()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="goToMyWallet" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="goToNetworks()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToNetworks" duration-ms="410" started-at="2018-03-28T15:38:55Z" finished-at="2018-03-28T15:38:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToMyWallet -->
-        <test-method status="SKIP" signature="goToShoppingCredits()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="goToShoppingCredits" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- goToNetworks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="530" started-at="2018-03-28T15:38:55Z" finished-at="2018-03-28T15:38:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToShoppingCredits -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4208" started-at="2018-03-28T15:38:56Z" finished-at="2018-03-28T15:39:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        <test-method status="PASS" signature="goToPlanManagement()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToPlanManagement" duration-ms="430" started-at="2018-03-28T15:39:00Z" finished-at="2018-03-28T15:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToPlanManagement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="629" started-at="2018-03-28T15:39:00Z" finished-at="2018-03-28T15:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4003" started-at="2018-03-28T15:39:01Z" finished-at="2018-03-28T15:39:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="goToUSDCredit()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="goToUSDCredit" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="goToReport()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToReport" duration-ms="338" started-at="2018-03-28T15:39:05Z" finished-at="2018-03-28T15:39:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUSDCredit -->
-        <test-method status="SKIP" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
+        </test-method> <!-- goToReport -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="539" started-at="2018-03-28T15:39:05Z" finished-at="2018-03-28T15:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="3890" started-at="2018-03-28T15:39:06Z" finished-at="2018-03-28T15:39:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="identityUpload()[pri:0, instance:Cirro.Test.MemberTestSuit@475530b9]" name="identityUpload" duration-ms="0" started-at="2018-03-26T18:33:16Z" finished-at="2018-03-26T18:33:16Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in /private/var/folders/c3/9gd8mh156tj0900r3h7dhp900000gq/T/testng-eclipse--1313985469/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="goToSupportTicket()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToSupportTicket" duration-ms="347" started-at="2018-03-28T15:39:10Z" finished-at="2018-03-28T15:39:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- identityUpload -->
-      </class> <!-- Cirro.Test.MemberTestSuit -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- goToSupportTicket -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="609" started-at="2018-03-28T15:39:10Z" finished-at="2018-03-28T15:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="5170" started-at="2018-03-28T15:39:11Z" finished-at="2018-03-28T15:39:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="goToSystemConfig()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToSystemConfig" duration-ms="369" started-at="2018-03-28T15:39:16Z" finished-at="2018-03-28T15:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSystemConfig -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="531" started-at="2018-03-28T15:39:16Z" finished-at="2018-03-28T15:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="setup" is-config="true" duration-ms="4134" started-at="2018-03-28T15:39:17Z" finished-at="2018-03-28T15:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234qwer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="goToWalletManagement()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="goToWalletManagement" duration-ms="480" started-at="2018-03-28T15:39:21Z" finished-at="2018-03-28T15:39:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToWalletManagement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Cirro.Test.AdminTestSuit@26be92ad]" name="tearDown" is-config="true" duration-ms="542" started-at="2018-03-28T15:39:21Z" finished-at="2018-03-28T15:39:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Cirro.Test.AdminTestSuit -->
+    </test> <!-- Admintest -->
+  </suite> <!-- Admin Login and check links -->
 </testng-results>

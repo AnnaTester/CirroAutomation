@@ -5,7 +5,7 @@
 	<parameter name="username" value="aadmin"></parameter>
 	<parameter name="password" value="1234qwer"></parameter>
 	<parameter name="captcha" value="11111"></parameter>
-	<test name="test" >
+	<test name="Admintest" >
 	  <classes>
 	     <class name="Cirro.Test.AdminTestSuit" />
 	  </classes>
